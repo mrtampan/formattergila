@@ -1,12 +1,12 @@
-const number = 100000;
-const number2 = 150000;
+const number = 100000000;
+const number2 = 300000000;
 
 console.log(new Intl.NumberFormat().format(number - number2));
 // expected output: "123.456,79 €"
 
 let calc = new Intl.NumberFormat().format(number - number2)
 
-console.log(typeof(new Intl.NumberFormat().format(number)));
+console.log(new Intl.NumberFormat().format(number));
 
 
 // the Japanese yen doesn't use a minor unit
